@@ -8,7 +8,7 @@ const Ad = () => {
       <div>
         <h1>-FEATURE PLACES-</h1>
       </div>
-      <div className="placeList">
+      <div className="ad">
         <div className="imgaeText">
           <img className="imageAd" src="./img/london.jpeg" alt="paris" />
           <h4>London, United Kingdom</h4>
@@ -26,7 +26,7 @@ const Ad = () => {
             />
             FAMOUS DESINATION
           </h3>
-          <p>
+          <p className="adText">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
