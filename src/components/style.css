@@ -210,19 +210,22 @@ i {
     font-size: 2rem;
   }
   .table1 {
-    width: 90vw;
-    margin-top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 80vw;
+    margin: 0 auto;
+    grid-column-gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   img.food {
-    width: 90vw;
-    margin: auto;
+    width: 80vw;
+    margin: 0;
     justify-content: center;
   }
   .ui.celled.table {
-    display: grid;
-    width: 90vw;
+    width: 70vw;
+    margin: 0;
   }
 }
 
