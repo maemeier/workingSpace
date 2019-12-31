@@ -2,6 +2,7 @@ import React from "react";
 import { dataCity } from "../dataCity";
 import "./style.css";
 import CoWorking from "../components/coWorking";
+import Banner from "../components/banner";
 
 class ListCoWorking extends React.Component {
   state = {
@@ -15,7 +16,7 @@ class ListCoWorking extends React.Component {
     const { places } = this.state;
     return (
       <>
-        <h1>-FIND OUR COWORKING SPACES-</h1>
+        <Banner title="Our CoWorking space" />
         <div className="placeList">
           {places.map(place => (
             <CoWorking

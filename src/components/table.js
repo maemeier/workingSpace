@@ -1,9 +1,10 @@
 import React from "react";
+import Banner from "../components/banner";
 
 const TableList = () => {
   return (
     <>
-      <h1>-WHY CHOOSE US-</h1>
+      <Banner title="Why Choose us" />
       <div className="table1">
         <div>
           <img className="food" src="./img/food.jpg" />

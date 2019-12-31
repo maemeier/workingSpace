@@ -1,12 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";
+import Banner from "../components/banner";
 
 const Ad = () => {
   return (
     <div>
       <div>
-        <h1>-FEATURE PLACES-</h1>
+        <Banner title="Featured Place" />
       </div>
       <div className="ad">
         <div className="imgaeText">
@@ -36,8 +37,8 @@ const Ad = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <a class="ui yellow image label">
-            <img src="/images/avatar/small/christian.jpg" />
-            Helen
+            <img src="/img/place1.jpg" />
+            Mae Meier
             <div class="detail">Editor choice</div>
           </a>
         </div>
