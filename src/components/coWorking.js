@@ -4,6 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 class CoWorking extends React.Component {
+  state = {
+    showInfo: false
+  };
+  handleInfo = () => {
+    this.setState({
+      showInfo: !this.state.showInfo
+    });
+  };
   render() {
     const { id, title, img, info, city, price } = this.props;
     const { removePlace } = this.props;
@@ -29,8 +37,11 @@ class CoWorking extends React.Component {
                     <strong>{price}</strong>
                   </span>
                 </div>
-                <div class="description box">{info}</div>
-                <div class="ui two buttons">
+                {this.state.showInfo && (
+                  <div class="description box">{info}</div>
+                )}
+
+                <div class="ui two buttons" onClick={this.handleInfo}>
                   <div class="ui basic green button">MORE INFO</div>
                 </div>
               </div>

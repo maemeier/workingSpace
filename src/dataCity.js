@@ -10,7 +10,7 @@ export const dataCity = [
   },
   {
     id: 2,
-    title: "Belleisimo",
+    title: "Bellevue",
     img: "./img/place2.jpg",
     city: "Mulhouse, France",
     price: "$$$$",
@@ -19,7 +19,7 @@ export const dataCity = [
   },
   {
     id: 3,
-    title: "Modern Woking",
+    title: "Modern Gottinger",
     img: "./img/place6.jpg",
     city: "Goettingen, Germany",
     price: "$$$$",
@@ -64,7 +64,25 @@ export const dataCity = [
   },
   {
     id: 8,
-    title: "Good Monday",
+    title: "Bellissimo",
+    img: "./img/place10.jpg",
+    city: "Como, Italy",
+    price: "$$",
+    info:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+  },
+  {
+    id: 7,
+    title: "Milleniym",
+    img: "./img/place9.jpg",
+    city: "Budapest, Hungary",
+    price: "$$$$",
+    info:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+  },
+  {
+    id: 8,
+    title: "Bellissimo",
     img: "./img/place10.jpg",
     city: "Como, Italy",
     price: "$$",

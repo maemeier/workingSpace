@@ -15,7 +15,7 @@ class ListCoWorking extends React.Component {
     const { places } = this.state;
     return (
       <>
-        <h1>-FIND YOUR COWORKING SPACES-</h1>
+        <h1>-FIND OUR COWORKING SPACES-</h1>
         <div className="placeList">
           {places.map(place => (
             <CoWorking

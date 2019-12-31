@@ -1,33 +1,52 @@
+.ui.inverted.menu {
+  margin: auto;
+}
 .placeList {
   width: 95vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   margin-top: 50px;
   grid-row-gap: 2rem;
   grid-column-gap: 30px;
   padding-bottom: 50px;
 }
 .ad {
-  width: 95vw;
+  width: 1200px;
   display: grid;
   justify-content: center;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-top: 50px;
   grid-row-gap: 2rem;
-  grid-column-gap: 20px;
+  grid-column-gap: 10px;
   padding-bottom: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ui.two.buttons {
+  margin-top: 10px;
+}
+h1.heroTitle {
+  position: absolute;
+  top: 470px;
+  right: 190px;
+  font-size: 5rem;
+  color: white;
+}
+h2.heroTitle2 {
+  position: absolute;
+  top: 570px;
+  right: 190px;
+  font-size: 4rem;
+  color: white;
 }
 img {
   width: 400px;
   opacity: 1;
 }
-img:hover {
-  opacity: 0.8;
-}
+
 h2:first-child {
   margin-top: 90px;
 }
@@ -46,8 +65,11 @@ h2:first-child {
   margin-bottom: 50px;
 }
 .hero {
+  position: relative;
   width: 100%;
-  height: 670px;
+  height: 1000px;
+  opacity: 1;
+  padding-bottom: 50px;
 }
 
 .imageAd {
@@ -56,8 +78,11 @@ h2:first-child {
 .imgaeText {
   position: relative;
 }
+img.food {
+  width: 700px;
+}
 h1 {
-  padding-top: 90px;
+  padding-top: 10px;
 }
 h3 {
   padding-top: 20px;
@@ -68,17 +93,31 @@ h3 {
 .box {
   margin-bottom: 10px;
 }
+.ui.celled.table {
+  margin: 0 auto;
+}
+
+.table1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  margin: 0 auto;
+  grid-column-gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 @media only screen and (max-width: 600px) {
   .hero {
     width: 100%;
     height: 250px;
+    padding-bottom: 30px;
   }
-  .imageAd {
-    width: 90vw;
+  img.imageAd {
+    width: 80vw;
   }
   h1 {
     font-size: 1.3rem;
-    padding-top: 30px;
+    padding-top: 0px;
   }
   .placeList {
     width: 90vw;
@@ -93,6 +132,9 @@ h3 {
   .adText {
     width: 85vw;
     margin: auto;
+  }
+  div.ad {
+    margin-bottom: 0px;
   }
 }
 
