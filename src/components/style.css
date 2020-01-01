@@ -192,24 +192,28 @@ i {
 /*EndFooter*/
 @media only screen and (max-width: 600px) {
   h1.heroTitle {
-    top: 70px;
+    top: 170px;
     right: 30px;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
   h2.heroTitle2 {
     position: absolute;
-    top: 90px;
+    top: 200px;
     right: 30px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     background: -webkit-linear-gradient(#eddcbd, #5d564a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white;
   }
+  .bannerHeader {
+    font-size: 1rem;
+  }
   .hero {
-    width: 100%;
-    height: 250px;
+    width: auto;
+    height: 400px;
     padding-bottom: 0px;
+    background-size: cover;
   }
   img.imageAd {
     width: 80vw;

@@ -7,7 +7,7 @@ const Ad = () => {
   return (
     <div>
       <div>
-        <Banner title="  FAMOUS DESINATION" />
+        <Banner title="Famous Desination" />
       </div>
       <div className="ad">
         <div className="imgaeText">
