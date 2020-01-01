@@ -2,9 +2,10 @@ export const dataCity = [
   {
     id: 1,
     title: "Hello Hustler",
+    slug: "europe",
     img: "./img/place1.jpg",
     city: "Bangkok, Thailand",
-    slug: "europe",
+
     type: "europe",
     price: 16,
     food: true,

@@ -23,7 +23,7 @@ class PlaceProvider extends React.Component {
       sortedPlaces: places,
       loading: false
     });
-    console.table(places);
+    // console.table(places);
   }
   formatData(dataCity) {
     let tempItems = dataCity.map(item => {

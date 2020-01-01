@@ -26,7 +26,9 @@ class CoWorking extends React.Component {
                 <img src={img} alt="image" />
               </div>
               <div className="content">
-                <a className="header">{title}</a>
+                <Link to={`/places/${slug}`}>
+                  <a className="header">{title}</a>
+                </Link>
                 <div className="meta">
                   <span className="date">{city}</span>
                   <span className="close-btn">
@@ -44,11 +46,10 @@ class CoWorking extends React.Component {
                 {this.state.showInfo && (
                   <div className="description box">{info}</div>
                 )}
-                <Link to={`/places/${slug}`}>
-                  <div className="ui two buttons" onClick={this.handleInfo}>
-                    <div className="ui basic brown button">MORE INFO</div>
-                  </div>
-                </Link>
+
+                <div className="ui two buttons" onClick={this.handleInfo}>
+                  <div className="ui basic brown button">MORE INFO</div>
+                </div>
               </div>
             </div>
           </div>

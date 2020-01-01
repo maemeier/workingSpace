@@ -11,7 +11,7 @@ class ListCoWorking extends React.Component {
   };
 
   removePlace = id => {
-    console.log(id);
+    // console.log(id);
   };
 
   static contextType = PlaceContext;
@@ -29,6 +29,7 @@ class ListCoWorking extends React.Component {
               city={place.city}
               info={place.info}
               price={place.price}
+              slug={place.slug}
               removePlace={this.removePlace}
             />
           ))}
