@@ -6,17 +6,18 @@ export const dataCity = [
     city: "Bangkok, Thailand",
     slug: "europe",
     type: "europe",
-    price: 30,
+    price: 16,
     food: true,
+    pets: false,
     featured: true,
     extras: [
       "10 mins walk from main train station",
-      "Soft, oversized bath towels",
-      "Full-sized, pH-balanced toiletries",
-      "Complimentary refreshments",
-      "Adequate safety/security",
-      "Internet",
-      "Comfortable beds"
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
     ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
@@ -29,8 +30,18 @@ export const dataCity = [
     type: "europe",
     city: "Mulhouse, France",
     food: true,
+    pets: false,
     featured: true,
     price: 30,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -42,8 +53,18 @@ export const dataCity = [
     type: "europe",
     city: "Goettingen, Germany",
     food: true,
+    pets: false,
     featured: true,
-    price: 30,
+    price: 20,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -55,8 +76,18 @@ export const dataCity = [
     type: "north-america",
     food: true,
     featured: true,
+    pets: true,
     city: "Calgary, Canada",
-    price: 30,
+    price: 37,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -67,9 +98,19 @@ export const dataCity = [
     slug: "europe",
     type: "europe",
     food: true,
+    pets: true,
     featured: false,
     city: "Hagglingen, Switzerland",
     price: 30,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -82,7 +123,17 @@ export const dataCity = [
     city: "Nantes, France",
     food: true,
     featured: false,
+    pets: true,
     price: 30,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -94,6 +145,7 @@ export const dataCity = [
     type: "europe",
     food: true,
     featured: false,
+    pets: false,
     city: "Budapest, Hungary",
     price: 30,
     info:
@@ -107,8 +159,18 @@ export const dataCity = [
     slug: "europe",
     type: "europe",
     food: true,
+    pets: false,
     featured: false,
     price: 30,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -120,8 +182,18 @@ export const dataCity = [
     type: "europe",
     food: true,
     featured: false,
+    pets: true,
     city: "Budapest, Hungary",
     price: 30,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -132,9 +204,19 @@ export const dataCity = [
     slug: "asia",
     type: "asia",
     food: true,
+    pets: false,
     featured: false,
     city: "Bangkok, Thailand",
     price: 30,
+    extras: [
+      "10 mins walk from main train station",
+      "Private meeting room",
+      "Included lunch and dinner",
+      "Locker with finger scan",
+      "Parking lot",
+      "Food Delivery",
+      "Monthly or yearly contracts"
+    ],
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   }

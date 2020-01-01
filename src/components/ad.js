@@ -7,7 +7,7 @@ const Ad = () => {
   return (
     <div>
       <div>
-        <Banner title="Featured Place" />
+        <Banner title="  FAMOUS DESINATION" />
       </div>
       <div className="ad">
         <div className="imgaeText">
@@ -25,7 +25,7 @@ const Ad = () => {
               icon={faMedal}
               style={{ color: " #ffcc00", marginRight: "10px" }}
             />
-            FAMOUS DESINATION
+            5 Starts Reviews
           </h3>
           <p className="addText">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

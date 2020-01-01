@@ -143,11 +143,9 @@ h3 {
 /*End Banner*/
 
 /*Table*/
-.ui.celled.table {
-  margin: 0 auto;
-  align-self: center;
+.ui.vertical.steps {
+  height: 300px;
 }
-
 .table1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,6 +154,8 @@ h3 {
   grid-column-gap: 30px;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+.content {
 }
 /*Footer*/
 .footer {
@@ -273,6 +273,9 @@ i {
     padding-top: 20px;
     margin: 0 auto;
     color: white;
+  }
+  .ui.vertical.steps {
+    height: auto;
   }
 }
 

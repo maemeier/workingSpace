@@ -19,7 +19,7 @@ class ListCoWorking extends React.Component {
     let { featuredPlaces: places } = this.context;
     return (
       <>
-        <Banner title="Our CoWorking space" />
+        <Banner title="Featured Places" />
         <div className="placeList">
           {places.map(place => (
             <CoWorking
