@@ -6,11 +6,11 @@ export const dataCity = [
     city: "Bangkok, Thailand",
     slug: "europe",
     type: "europe",
-    price: "$$$",
+    price: 30,
     food: true,
     featured: true,
     extras: [
-      "Plush pillows and breathable bed linens",
+      "10 mins walk from main train station",
       "Soft, oversized bath towels",
       "Full-sized, pH-balanced toiletries",
       "Complimentary refreshments",
@@ -30,7 +30,7 @@ export const dataCity = [
     city: "Mulhouse, France",
     food: true,
     featured: true,
-    price: "$$$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -43,7 +43,7 @@ export const dataCity = [
     city: "Goettingen, Germany",
     food: true,
     featured: true,
-    price: "$$$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -56,7 +56,7 @@ export const dataCity = [
     food: true,
     featured: true,
     city: "Calgary, Canada",
-    price: "$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -67,9 +67,9 @@ export const dataCity = [
     slug: "europe",
     type: "europe",
     food: true,
-    featured: true,
+    featured: false,
     city: "Hagglingen, Switzerland",
-    price: "$$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -77,8 +77,12 @@ export const dataCity = [
     id: 6,
     title: "Lightroom",
     img: "./img/place8.jpg",
+    slug: "europe",
+    type: "europe",
     city: "Nantes, France",
-    price: "$$$$",
+    food: true,
+    featured: false,
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -89,9 +93,9 @@ export const dataCity = [
     slug: "europe",
     type: "europe",
     food: true,
-    featured: true,
+    featured: false,
     city: "Budapest, Hungary",
-    price: "$$$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -100,9 +104,11 @@ export const dataCity = [
     title: "Bellissimo",
     img: "./img/place10.jpg",
     city: "Como, Italy",
+    slug: "europe",
+    type: "europe",
     food: true,
-    featured: true,
-    price: "$$",
+    featured: false,
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -115,7 +121,7 @@ export const dataCity = [
     food: true,
     featured: false,
     city: "Budapest, Hungary",
-    price: "$$$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   },
@@ -128,7 +134,7 @@ export const dataCity = [
     food: true,
     featured: false,
     city: "Bangkok, Thailand",
-    price: "$$",
+    price: 30,
     info:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
   }

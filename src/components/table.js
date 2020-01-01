@@ -7,7 +7,7 @@ const TableList = () => {
       <Banner title="Why Choose us" />
       <div className="table1">
         <div>
-          <img className="food" src="./img/food.jpg" />
+          <img className="food" src="./img/food.jpg" alt="food" />
         </div>
 
         <table className="ui celled table">

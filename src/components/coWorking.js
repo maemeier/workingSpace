@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 class CoWorking extends React.Component {
   state = {
@@ -13,15 +14,15 @@ class CoWorking extends React.Component {
     });
   };
   render() {
-    const { id, title, img, info, city, price } = this.props;
-    const { removePlace } = this.props;
+    const { title, img, info, city, price, slug } = this.props;
+
     return (
       <>
         <div className="grid">
           <div className="five wide column">
             <div className="ui card">
               <div className="image">
-                <img src={img} />
+                <img src={img} alt="image" />
               </div>
               <div className="content">
                 <a className="header">{title}</a>
@@ -33,17 +34,20 @@ class CoWorking extends React.Component {
                       style={{ color: "tomato" }}
                     />
                   </span>
-                  <span className="date">
-                    <strong>{price}</strong>
-                  </span>
+                  <div>
+                    <span className="date">
+                      <strong> from {price} CHF</strong>
+                    </span>
+                  </div>
                 </div>
                 {this.state.showInfo && (
                   <div className="description box">{info}</div>
                 )}
-
-                <div className="ui two buttons" onClick={this.handleInfo}>
-                  <div className="ui basic brown button">MORE INFO</div>
-                </div>
+                <Link to={`/places/${slug}`}>
+                  <div className="ui two buttons" onClick={this.handleInfo}>
+                    <div className="ui basic brown button">MORE INFO</div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

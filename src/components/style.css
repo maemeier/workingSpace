@@ -108,6 +108,15 @@ h3 {
 .box {
   margin-bottom: 10px;
 }
+/*Loading*/
+.loading {
+  width: 80vw;
+  margin: auto;
+}
+.ui.segment {
+  height: 260px;
+}
+/*End loading*/
 /*Banner*/
 .banner {
   display: inline-block;

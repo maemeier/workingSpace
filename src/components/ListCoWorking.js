@@ -1,5 +1,6 @@
 import React from "react";
 import { dataCity } from "../dataCity";
+import { PlaceContext } from "../context";
 import "./style.css";
 import CoWorking from "../components/coWorking";
 import Banner from "../components/banner";
@@ -12,8 +13,10 @@ class ListCoWorking extends React.Component {
   removePlace = id => {
     console.log(id);
   };
+
+  static contextType = PlaceContext;
   render() {
-    const { places } = this.state;
+    let { featuredPlaces: places } = this.context;
     return (
       <>
         <Banner title="Our CoWorking space" />

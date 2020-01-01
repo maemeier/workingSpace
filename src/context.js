@@ -1,5 +1,5 @@
 import React from "react";
-import items from "./dataCity";
+import { dataCity } from "./dataCity";
 const PlaceContext = React.createContext();
 // Provider: allow all components in the componen trees to access
 
@@ -10,8 +10,30 @@ class PlaceProvider extends React.Component {
     places: [],
     sortedPlaces: [],
     featuredPlaces: [],
-    loading: true
+    loading: false
   };
+  // getData
+
+  componentDidMount() {
+    let places = this.formatData(dataCity);
+    let featuredPlaces = places.filter(place => place.featured === true);
+    this.setState({
+      places,
+      featuredPlaces,
+      sortedPlaces: places,
+      loading: false
+    });
+    console.table(places);
+  }
+  formatData(dataCity) {
+    let tempItems = dataCity.map(item => {
+      let id = item.id;
+      let place = { ...item, id };
+      return place;
+    });
+    return tempItems;
+  }
+
   render() {
     return (
       <PlaceContext.Provider value={{ ...this.state }}>

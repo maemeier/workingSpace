@@ -36,7 +36,7 @@ const Ad = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <a className="ui yellow image label">
+          <a className="ui yellow image label" href="#">
             <img src="/img/place1.jpg" />
             Mae Meier
             <div className="detail">Editor choice</div>
