@@ -201,7 +201,7 @@ export const dataCity = [
   },
   {
     id: 10,
-    title: "Bellissimo",
+    title: "Evangelia",
     img: "./img/place10.jpg",
     slug: "europe",
     type: "asia",
