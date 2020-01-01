@@ -30,6 +30,7 @@ class ListCoWorking extends React.Component {
               info={place.info}
               price={place.price}
               slug={place.slug}
+              description={place.description}
               removePlace={this.removePlace}
             />
           ))}

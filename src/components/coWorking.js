@@ -15,7 +15,7 @@ class CoWorking extends React.Component {
     });
   };
   render() {
-    const { title, img, info, city, price, slug } = this.props;
+    const { title, img, info, city, price, slug, description } = this.props;
 
     return (
       <>
@@ -43,6 +43,7 @@ class CoWorking extends React.Component {
                     </span>
                   </div>
                 </div>
+
                 {this.state.showInfo && (
                   <div className="description box">{info}</div>
                 )}

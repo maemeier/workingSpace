@@ -29,7 +29,7 @@ class SinglePlace extends React.Component {
     const { title, img, price, info, breakfast, extras } = place;
     return (
       <div>
-        <Banner title={`${title} place`} />
+        <Banner title={`${title} `} />
         <Link to="/places">Back to our Coworking Spaces</Link>
       </div>
     );
