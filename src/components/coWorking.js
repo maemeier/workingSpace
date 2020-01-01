@@ -3,6 +3,7 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 class CoWorking extends React.Component {
   state = {
@@ -57,4 +58,9 @@ class CoWorking extends React.Component {
   }
 }
 
+CoWorking.propTypes = {
+  place: PropTypes.shape({
+    title: PropTypes.string.isRequired
+  })
+};
 export default CoWorking;

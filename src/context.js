@@ -34,9 +34,14 @@ class PlaceProvider extends React.Component {
     return tempItems;
   }
 
+  getPlace = slug => {
+    let tempPlaces = [...this.state.places];
+    const place = tempPlaces.find(place => place.slug === slug);
+    return place;
+  };
   render() {
     return (
-      <PlaceContext.Provider value={{ ...this.state }}>
+      <PlaceContext.Provider value={{ ...this.state, getPlace: this.getPlace }}>
         {/*children*/}
         {this.props.children}
       </PlaceContext.Provider>
