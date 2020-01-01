@@ -1,18 +1,24 @@
 import React from "react";
-import ListCoWorking from "./components/ListCoWorking";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import TableList from "./components/table";
-import Ad from "./components/ad";
+import { Route, Switch } from "react-router-dom";
 import Homepage from "./page/homepage";
+import Places from "./page/places";
+import SinglePlace from "./page/singlePlace";
+import AboutMe from "./page/aboutMe";
+import NotFound from "./page/notFound";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
-    </div>
+    <>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/aboutus" component={AboutMe} />
+        <Route exact path="/places" component={Places} />
+        <Route exact path="/places/:slug" component={SinglePlace} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 

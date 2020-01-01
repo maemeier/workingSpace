@@ -42,7 +42,7 @@ class CoWorking extends React.Component {
                 )}
 
                 <div class="ui two buttons" onClick={this.handleInfo}>
-                  <div class="ui basic green button">MORE INFO</div>
+                  <div class="ui basic brown button">MORE INFO</div>
                 </div>
               </div>
             </div>

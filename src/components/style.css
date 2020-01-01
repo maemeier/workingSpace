@@ -23,6 +23,9 @@
   grid-row-gap: 2rem;
   padding-bottom: 50px;
 }
+.ui.basic.green.button {
+  color: white;
+}
 p.addText {
   width: 400px;
   margin: auto;
@@ -33,7 +36,9 @@ p.addText {
 }
 h1.heroTitle {
   position: absolute;
-
+  background: -webkit-linear-gradient(#eddcbd, #5d564a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   top: 470px;
   right: 190px;
   font-size: 5rem;
@@ -44,6 +49,9 @@ h2.heroTitle2 {
   top: 570px;
   right: 190px;
   font-size: 4rem;
+  background: -webkit-linear-gradient(#eddcbd, #5d564a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: white;
 }
 img {
@@ -174,14 +182,30 @@ i {
 /*EndTable*/
 /*EndFooter*/
 @media only screen and (max-width: 600px) {
+  h1.heroTitle {
+    top: 70px;
+    right: 30px;
+    font-size: 1.6rem;
+  }
+  h2.heroTitle2 {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    font-size: 1.4rem;
+    background: -webkit-linear-gradient(#eddcbd, #5d564a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+  }
   .hero {
     width: 100%;
     height: 250px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
   }
   img.imageAd {
     width: 80vw;
   }
+
   h1 {
     font-size: 1.3rem;
     padding-top: 0px;
@@ -209,6 +233,9 @@ i {
   .banner h1 {
     font-size: 2rem;
   }
+  .banner {
+    padding-bottom: 0px;
+  }
   .table1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -226,6 +253,17 @@ i {
   .ui.celled.table {
     width: 70vw;
     margin: 0;
+  }
+  .iconList {
+    margin: auto;
+    width: 70vw;
+    justify-content: center;
+  }
+  .ui.form {
+    width: 90vw;
+    padding-top: 20px;
+    margin: 0 auto;
+    color: white;
   }
 }
 
