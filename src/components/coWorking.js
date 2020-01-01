@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 class CoWorking extends React.Component {
   state = {
-    showInfo: false
+    showInfo: true
   };
   handleInfo = () => {
     this.setState({
@@ -15,7 +15,7 @@ class CoWorking extends React.Component {
     });
   };
   render() {
-    const { title, img, info, city, price, slug, description } = this.props;
+    const { title, img, info, city, price, slug } = this.props;
 
     return (
       <>
@@ -26,9 +26,8 @@ class CoWorking extends React.Component {
                 <img src={img} alt="image" />
               </div>
               <div className="content">
-                <Link to={`/places/${slug}`}>
-                  <a className="header">{title}</a>
-                </Link>
+                <a className="header">{title}</a>
+
                 <div className="meta">
                   <span className="date">{city}</span>
                   <span className="close-btn">
@@ -47,10 +46,11 @@ class CoWorking extends React.Component {
                 {this.state.showInfo && (
                   <div className="description box">{info}</div>
                 )}
-
-                <div className="ui two buttons" onClick={this.handleInfo}>
-                  <div className="ui basic brown button">MORE INFO</div>
-                </div>
+                <Link to={`/places/${slug}`}>
+                  <div className="ui two buttons" onClick={this.handleInfo}>
+                    <div className="ui basic brown button">MORE INFO</div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
