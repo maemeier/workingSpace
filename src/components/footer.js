@@ -6,42 +6,47 @@ const Footer = () => {
     <div className="footer">
       <h1 className="footerHeader">COWORKING SPACE</h1>
       <IconList />
-      <form class="ui form">
-        <div class="unstackable two fields">
-          <div class="field">
+      <form className="ui form">
+        <div className="unstackable two fields">
+          <div className="field">
             <label>First name</label>
-            <div class="ui input">
+            <div className="ui input">
               <input type="text" placeholder="First name" />
             </div>
           </div>
-          <div class="field">
+          <div className="field">
             <label>Last name</label>
-            <div class="ui input">
+            <div className="ui input">
               <input type="text" placeholder="Last name" />
             </div>
           </div>
         </div>
-        <div class="two fields">
-          <div class="field">
+        <div className="two fields">
+          <div className="field">
             <label>Address</label>
-            <div class="ui input">
+            <div className="ui input">
               <input type="text" placeholder="Address" />
             </div>
           </div>
-          <div class="field">
+          <div className="field">
             <label>Phone</label>
-            <div class="ui input">
+            <div className="ui input">
               <input type="text" placeholder="Phone" />
             </div>
           </div>
         </div>
-        <div class="field">
-          <div class="ui checkbox">
-            <input type="checkbox" class="hidden" readonly="" tabindex="0" />
+        <div className="field">
+          <div className="ui checkbox">
+            <input
+              type="checkbox"
+              className="hidden"
+              readOnly=""
+              tabIndex="0"
+            />
             <label>I agree to the Terms and Conditions</label>
           </div>
         </div>
-        <button type="submit" class="ui button">
+        <button type="submit" className="ui button">
           Submit
         </button>
       </form>

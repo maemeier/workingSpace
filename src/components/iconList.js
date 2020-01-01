@@ -3,12 +3,12 @@ import React from "react";
 const IconList = () => {
   return (
     <div className="iconList">
-      <i class="bath icon big" />
-      <i class="coffee icon big" />
-      <i class="suitcase icon big" />
-      <i class="wifi icon big" />
-      <i class="plug icon big" />
-      <i class="food icon big" />
+      <i className="bath icon big" />
+      <i className="coffee icon big" />
+      <i className="suitcase icon big" />
+      <i className="wifi icon big" />
+      <i className="plug icon big" />
+      <i className="food icon big" />
     </div>
   );
 };

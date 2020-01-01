@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 class CoWorking extends React.Component {
   state = {
@@ -18,31 +18,31 @@ class CoWorking extends React.Component {
     return (
       <>
         <div className="grid">
-          <div class="five wide column">
-            <div class="ui card">
-              <div class="image">
+          <div className="five wide column">
+            <div className="ui card">
+              <div className="image">
                 <img src={img} />
               </div>
-              <div class="content">
-                <a class="header">{title}</a>
-                <div class="meta">
-                  <span class="date">{city}</span>
+              <div className="content">
+                <a className="header">{title}</a>
+                <div className="meta">
+                  <span className="date">{city}</span>
                   <span className="close-btn">
                     <FontAwesomeIcon
-                      icon={faTrash}
+                      icon={faHeart}
                       style={{ color: "tomato" }}
                     />
                   </span>
-                  <span class="date">
+                  <span className="date">
                     <strong>{price}</strong>
                   </span>
                 </div>
                 {this.state.showInfo && (
-                  <div class="description box">{info}</div>
+                  <div className="description box">{info}</div>
                 )}
 
-                <div class="ui two buttons" onClick={this.handleInfo}>
-                  <div class="ui basic brown button">MORE INFO</div>
+                <div className="ui two buttons" onClick={this.handleInfo}>
+                  <div className="ui basic brown button">MORE INFO</div>
                 </div>
               </div>
             </div>
