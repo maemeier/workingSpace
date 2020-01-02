@@ -13,6 +13,22 @@
   grid-column-gap: 30px;
   padding-bottom: 40px;
 }
+
+/* Hero */
+.defaultHero,
+.roomsHero {
+  min-height: calc(100vh - 66px);
+  background: url("/img/place2.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roomsHero {
+  background-image: url("/img/place1.jpg");
+  min-height: 60vh;
+}
+/* End of Hero */
+
 .ad {
   width: 85vw;
   display: grid;
@@ -117,6 +133,72 @@ h3 {
   height: 260px;
 }
 /*End loading*/
+
+/*SinglePlace*/
+.gridPlace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  width: 80vw;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+img.singlePlaceImg {
+  width: 900px;
+  border-radius: 5px;
+}
+.ui.card {
+  margin: 0 auto;
+}
+/*End SinglePlace*/
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: #484339;
+  z-index: 1;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: white;
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+.nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.show-nav {
+  height: 100px;
+}
 /*Banner*/
 .banner {
   display: inline-block;
@@ -280,6 +362,19 @@ i {
   }
   .ui.vertical.steps {
     height: auto;
+  }
+
+  .gridPlace {
+    display: block;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+  img.singlePlaceImg {
+    width: 80vw;
+    border-radius: 5px;
+    margin-bottom: 20px;
   }
 }
 

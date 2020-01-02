@@ -5,7 +5,9 @@ export const dataCity = [
     slug: "HelloHustler",
     img: "./img/place1.jpg",
     city: "Bangkok, Thailand",
-
+    address: "Vorstadt 10, 5670 Hagglingen",
+    tel: "+41 79 531 30 77",
+    time: "Monday - Sunday 24 hours",
     type: "europe",
     price: 16,
     food: true,
