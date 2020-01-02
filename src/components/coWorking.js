@@ -15,7 +15,7 @@ class CoWorking extends React.Component {
     });
   };
   render() {
-    const { title, img, info, city, price, slug } = this.props;
+    let { title, img, info, city, price, slug } = this.props;
 
     return (
       <>

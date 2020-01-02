@@ -20,7 +20,6 @@ class SinglePlace extends React.Component {
   render() {
     const { getPlace } = this.context;
     const place = getPlace(this.state.slug);
-    console.log("SinglePlace", place);
     if (!place) {
       return (
         <div>

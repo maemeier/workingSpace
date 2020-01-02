@@ -50,5 +50,15 @@ class PlaceProvider extends React.Component {
 }
 
 const PlaceComsumer = PlaceContext.Consumer;
+
+export function withPlaceConsumer(Component) {
+  return function ConsumerWrapper(props) {
+    return (
+      <PlaceComsumer>
+        {value => <Component {...props} context={value} />}
+      </PlaceComsumer>
+    );
+  };
+}
 export { PlaceProvider, PlaceComsumer, PlaceContext };
 export default PlaceProvider;
