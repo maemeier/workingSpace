@@ -31,7 +31,7 @@ export default class Navbar extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/rooms">Rooms</Link>
+              <Link to="/places">CoWorking</Link>
             </li>
           </ul>
         </div>

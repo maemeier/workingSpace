@@ -9,7 +9,7 @@ class Places extends React.Component {
     return (
       <div>
         <Hero />
-        <Banner title={"our Cowoking spaces"} />
+        <Banner title={"Search Cowoking spaces"} />
 
         <Link to="/">Back to home</Link>
 
