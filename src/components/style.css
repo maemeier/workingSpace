@@ -108,7 +108,7 @@ h2:first-child {
   position: relative;
 }
 img.food {
-  width: 700px;
+  width: 500px;
   border-radius: 5px;
   box-shadow: 5px 5px 26px -5px rgba(0, 0, 0, 0.35);
 }
@@ -158,7 +158,7 @@ img.singlePlaceImg {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: #484339;
+  background: #222e2e;
   z-index: 1;
 }
 .nav-header {
@@ -233,7 +233,7 @@ img.singlePlaceImg {
   grid-template-columns: 1fr 1fr;
   width: 80vw;
   margin: 0 auto;
-  grid-column-gap: 30px;
+  grid-column-gap: 5px;
   margin-bottom: 50px;
   margin-top: 50px;
 }

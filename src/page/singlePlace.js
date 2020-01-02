@@ -48,9 +48,6 @@ class SinglePlace extends React.Component {
       <div className="wrapSineglePlace">
         <Navbar />
         <Banner title={`${title} `} />
-        <button>
-          <Link to="/places">Back to our Coworking Spaces</Link>
-        </button>
 
         <div className="gridPlace">
           <img className="singlePlaceImg" src="../img/place1.jpg" />
@@ -65,8 +62,12 @@ class SinglePlace extends React.Component {
                 </p>
                 <p>{info}</p>
               </div>
+              <br />
               <div class="description">
                 <p>
+                  <p>
+                    <strong>Extras:</strong>
+                  </p>
                   <ul>
                     {extras.map((item, index) => {
                       return <li key={index}> {item} </li>;
@@ -97,8 +98,13 @@ class SinglePlace extends React.Component {
             </div>
           </div>
         </div>
-
-        <Footer />
+        <button class="ui right labeled icon button">
+          <Link to="/places">
+            {" "}
+            <i class="right arrow icon"></i>
+            Back
+          </Link>
+        </button>
       </div>
     );
   }

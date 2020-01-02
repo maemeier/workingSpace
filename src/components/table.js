@@ -7,33 +7,42 @@ const TableList = () => {
       <Banner title="Why Choose us" />
       <div className="table1">
         <div>
-          <img className="food" src="./img/food.jpg" alt="food" />
+          <img className="food" src="./img/place11.png" alt="food" />
         </div>
 
-        <div class="ui vertical  steps">
-          <div class="completed step">
-            <i class=" icon"></i>
-            <div class="content">
-              <div class="title">Central Location</div>
+        <div>
+          <div class="ui cards">
+            <div class="card">
+              <div class="content">
+                <div class="header">Central Location</div>
+                <div class="meta">Friend</div>
+                <div class="description">
+                  10 mins from train station or subway
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="completed step">
-            <i class="credit card icon"></i>
-            <div class="content">
-              <div class="title">Kitchen & Cleaning</div>
+            <div class="card">
+              <div class="content">
+                <div class="header">Kitchen & Cleaning</div>
+                <div class="meta">Friend</div>
+                <div class="description">
+                  Elliot Fu is a film-maker from New York.
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="completed step">
-            <i class="info icon"></i>
-            <div class="content">
-              <div class="title">Top Quality Furniture</div>
+            <div class="card">
+              <div class="content">
+                <div class="header">Top Quality Furniture</div>
+                <div class="meta">Friend</div>
+                <div class="description">Modern and nice Furniture</div>
+              </div>
             </div>
-          </div>
-          <div class="completed step">
-            <i class="info icon"></i>
-            <div class="content">
-              <div class="title">Personal Service</div>
-              <div class="description">Verify order details</div>
+            <div class="card">
+              <div class="content">
+                <div class="header">Always avaliable</div>
+                <div class="meta">Friend</div>
+                <div class="description">Open 24 hours with staffs</div>
+              </div>
             </div>
           </div>
         </div>

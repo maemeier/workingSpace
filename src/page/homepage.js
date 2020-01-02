@@ -4,13 +4,16 @@ import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import TableList from "../components/table";
 import Ad from "../components/ad";
+import Banner from "../components/banner";
 import Footer from "../components/footer";
 
 const Homepage = () => {
   return (
     <div className="App">
       <Navbar />
+
       <Hero />
+
       <Ad />
       <ListCoWorking />
       <TableList />
