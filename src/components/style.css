@@ -37,6 +37,8 @@
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 .btn-primary:hover {
   background: transparent;
@@ -332,9 +334,52 @@ i {
     -webkit-text-fill-color: transparent;
     color: white;
   }
-  .bannerHeader {
-    font-size: 1rem;
+  /*Banner*/
+  .banner {
+    display: relative;
+    color: black;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
   }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+  .banner div {
+    width: 8rem;
+    height: 5px;
+    background-color: #564f44;
+    margin: 1rem auto;
+  }
+  .banner p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /*End Banner*/
+  /* button */
+  .btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainBlack);
+    background: var(--primaryColor);
+    padding: 0.4rem 0.9rem;
+    border: 2px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--primaryColor);
+  }
+  /* end button */
+
   img.hero {
     max-width: 100%;
     height: 400px;
