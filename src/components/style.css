@@ -295,11 +295,15 @@ img.singlePlaceImg {
 }
 /*Footer*/
 .footer {
-  height: 450px;
+  height: 200px;
   background: #222e2e;
 }
-.footerHeader {
-  padding-top: 40px;
+.footerText {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  justify-content: center;
+
   color: white;
 }
 i {

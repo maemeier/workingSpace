@@ -1,31 +1,22 @@
 import React from "react";
-import Navbar from "./navbar";
+
 import PlaceFilter from "./placeFilter";
 import PlaceList from "./placeList";
-import { PlaceComsumer } from "../context";
+import { withPlaceConsumer } from "../context";
 import Loading from "./loading";
-class PlaceContainer extends React.Component {
-  render() {
-    return (
-      <>
-        <Navbar />
-        <PlaceComsumer>
-          {value => {
-            const { loading, sortedPlaces, places } = value;
-            if (loading) {
-              return <Loading />;
-            }
-            return (
-              <div>
-                <PlaceFilter places={places} />
-                <PlaceList places={sortedPlaces} />
-              </div>
-            );
-          }}
-        </PlaceComsumer>
-      </>
-    );
+const PlaceContainer = ({ context }) => {
+  const { loading, sortedPlaces, places } = context;
+  if (loading) {
+    return <Loading />;
   }
-}
+  return (
+    <>
+      <div>
+        {/*<PlaceFilter places={places} /> */}
+        <PlaceList places={sortedPlaces} />
+      </div>
+    </>
+  );
+};
 
-export default PlaceContainer;
+export default withPlaceConsumer(PlaceContainer);
