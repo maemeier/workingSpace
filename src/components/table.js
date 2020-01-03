@@ -11,37 +11,37 @@ const TableList = () => {
         </div>
 
         <div>
-          <div class="ui cards">
-            <div class="card">
-              <div class="content">
-                <div class="header">Central Location</div>
-                <div class="meta">Friend</div>
-                <div class="description">
+          <div className="ui cards">
+            <div className="card">
+              <div className="content">
+                <div className="header">Central Location</div>
+                <div className="meta">Friend</div>
+                <div className="description">
                   10 mins from train station or subway
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="content">
-                <div class="header">Kitchen & Cleaning</div>
-                <div class="meta">Friend</div>
-                <div class="description">
+            <div className="card">
+              <div className="content">
+                <div className="header">Kitchen & Cleaning</div>
+                <div className="meta">Friend</div>
+                <div className="description">
                   Elliot Fu is a film-maker from New York.
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="content">
-                <div class="header">Top Quality Furniture</div>
-                <div class="meta">Friend</div>
-                <div class="description">Modern and nice Furniture</div>
+            <div className="card">
+              <div className="content">
+                <div className="header">Top Quality Furniture</div>
+                <div className="meta">Friend</div>
+                <div className="description">Modern and nice Furniture</div>
               </div>
             </div>
-            <div class="card">
-              <div class="content">
-                <div class="header">Always avaliable</div>
-                <div class="meta">Friend</div>
-                <div class="description">Open 24 hours with staffs</div>
+            <div className="card">
+              <div className="content">
+                <div className="header">Always avaliable</div>
+                <div className="meta">Friend</div>
+                <div className="description">Open 24 hours with staffs</div>
               </div>
             </div>
           </div>

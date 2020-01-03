@@ -1,5 +1,4 @@
 import React from "react";
-import Places from "./places";
 import CoWorking from "./coWorking";
 
 const PlaceList = ({ places }) => {

@@ -10,18 +10,27 @@ class PlaceProvider extends React.Component {
     places: [],
     sortedPlaces: [],
     featuredPlaces: [],
-    loading: false
+    loading: false,
+    type: "all",
+    price: 0,
+    minPrice: 0,
+    maxPrice: 0,
+    food: false,
+    pets: false
   };
   // getData
 
   componentDidMount() {
     let places = this.formatData(dataCity);
     let featuredPlaces = places.filter(place => place.featured === true);
+    let maxPrice = Math.max(...places.map(item => item.price));
+
     this.setState({
       places,
       featuredPlaces,
       sortedPlaces: places,
-      loading: false
+      loading: false,
+      price: maxPrice
     });
     // console.table(places);
   }
@@ -39,9 +48,26 @@ class PlaceProvider extends React.Component {
     const place = tempPlaces.find(place => place.slug === slug);
     return place;
   };
+
+  handleChange = event => {
+    const type = event.target.type;
+    const title = event.target.title;
+    const value = event.target.value;
+    console.log(type, title, value);
+  };
+
+  filterPlaces = () => {
+    console.log("hello");
+  };
   render() {
     return (
-      <PlaceContext.Provider value={{ ...this.state, getPlace: this.getPlace }}>
+      <PlaceContext.Provider
+        value={{
+          ...this.state,
+          getPlace: this.getPlace,
+          handleChange: this.handleChange
+        }}
+      >
         {/*children*/}
         {this.props.children}
       </PlaceContext.Provider>

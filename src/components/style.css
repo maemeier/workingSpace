@@ -202,7 +202,6 @@ img.singlePlaceImg {
 /*Banner*/
 .banner {
   display: inline-block;
-
   color: black;
   padding: 2rem 1rem;
   text-align: center;
@@ -222,6 +221,7 @@ img.singlePlaceImg {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
 /*End Banner*/
 
 /*Table*/
@@ -242,11 +242,7 @@ img.singlePlaceImg {
 /*Footer*/
 .footer {
   height: 450px;
-  background: linear-gradient(
-    90deg,
-    rgba(45, 41, 33, 1) 35%,
-    rgba(70, 63, 51, 0.9444152661064426) 100%
-  );
+  background: #222e2e;
 }
 .footerHeader {
   padding-top: 40px;
