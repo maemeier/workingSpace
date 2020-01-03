@@ -334,6 +334,21 @@ i {
     -webkit-text-fill-color: transparent;
     color: white;
   }
+
+  /* Hero */
+  .defaultHero,
+  .roomsHero {
+    height: 350px;
+    background: url("/img/place2.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .roomsHero {
+    background-image: url("/img/defaultHero.jpg");
+    min-height: 60vh;
+  }
+  /* End of Hero */
   /*Banner*/
   .banner {
     display: relative;
