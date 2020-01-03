@@ -75,6 +75,7 @@ img.logoHeader {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .roomsHero {
   background-image: url("/img/defaultHero.jpg");
