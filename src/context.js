@@ -23,14 +23,14 @@ class PlaceProvider extends React.Component {
   componentDidMount() {
     let places = this.formatData(dataCity);
     let featuredPlaces = places.filter(place => place.featured === true);
-    let maxPrice = Math.max(...places.map(item => item.price));
-
+    let maxPrice = Math.max(...places.map(place => place.price));
     this.setState({
       places,
       featuredPlaces,
       sortedPlaces: places,
       loading: false,
-      price: maxPrice
+      price: maxPrice,
+      maxPrice
     });
     // console.table(places);
   }
@@ -50,15 +50,35 @@ class PlaceProvider extends React.Component {
   };
 
   handleChange = event => {
-    const type = event.target.type;
+    const target = event.target;
+    const value = target.type === "checkbox" ? target.checked : target.value;
     const title = event.target.title;
-    const value = event.target.value;
-    console.log(type, title, value);
+    this.setState(
+      {
+        [title]: value
+      },
+      this.filterPlaces
+    );
   };
 
   filterPlaces = () => {
-    console.log("hello");
+    let { places, type, price, food, pets } = this.state;
+    let tempPlaces = [...places];
+    price = parseInt(price);
+
+    // filter by type
+    if (type !== "all") {
+      tempPlaces = tempPlaces.filter(place => place.type === type);
+    }
+
+    // filter by price
+    tempPlaces = tempPlaces.filter(place => place.price <= price);
+
+    this.setState({
+      sortedPlaces: tempPlaces
+    });
   };
+
   render() {
     return (
       <PlaceContext.Provider

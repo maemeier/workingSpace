@@ -4,6 +4,7 @@ import Banner from "../components/banner";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import PlaceContainer from "../components/placeContainer";
+
 import "../components/style.css";
 
 class Places extends React.Component {
@@ -12,13 +13,14 @@ class Places extends React.Component {
       <div>
         <Hero />
 
-        <Banner title="Search Cowoking spaces" />
-
-        <br />
-        <Link to="/">
-          <button>Back to home</button>
-        </Link>
-
+        <Banner
+          title="our Coworking Space"
+          subtitle="Choose the office near you"
+        >
+          <Link to="/" className="btn-primary">
+            Back to home
+          </Link>
+        </Banner>
         <PlaceContainer />
         <Footer />
       </div>

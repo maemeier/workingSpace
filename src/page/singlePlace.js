@@ -40,13 +40,19 @@ class SinglePlace extends React.Component {
       pets,
       food,
       address,
+      sologan,
       time,
       tel
     } = place;
     return (
       <div className="wrapSineglePlace">
         <Navbar />
-        <Banner title={`${title} `} />
+        <Hero />
+        <Banner title={title} subtitle={sologan}>
+          <Link to="/places" className="btn-primary">
+            Back to list
+          </Link>
+        </Banner>
 
         <div className="gridPlace">
           <img className="singlePlaceImg" src="../img/place1.jpg" />
@@ -97,13 +103,7 @@ class SinglePlace extends React.Component {
             </div>
           </div>
         </div>
-        <button class="ui right labeled icon button">
-          <Link to="/places">
-            {" "}
-            <i class="right arrow icon"></i>
-            Back
-          </Link>
-        </button>
+        <Footer />
       </div>
     );
   }

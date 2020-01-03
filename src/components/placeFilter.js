@@ -24,11 +24,15 @@ const PlaceFilter = ({ places }) => {
       </option>
     );
   });
+
+  // room maxPrice
+
   return (
     <section className="filter-container">
       <form className="filter-form">
-        <div>
-          <lable htmlFor="type"> country </lable>
+        {/*select type  */}
+        <div className="form-group">
+          <label htmlFor="type">room type</label>
           <select
             name="type"
             id="type"
@@ -40,6 +44,20 @@ const PlaceFilter = ({ places }) => {
           </select>
         </div>
       </form>
+
+      <div className="form-group">
+        <label htmlFor="price"> price range ${price}</label>
+        <input
+          type="range"
+          name="price"
+          min={minPrice}
+          max={maxPrice}
+          id="price"
+          value={price}
+          onChange={handleChange}
+          className="form-control"
+        />
+      </div>
     </section>
   );
 };
