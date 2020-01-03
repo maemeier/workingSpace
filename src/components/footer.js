@@ -6,50 +6,56 @@ const Footer = () => {
     <div className="footer">
       <h1 className="footerHeader">COWORKING SPACE</h1>
       <IconList />
-      <form className="ui form">
-        <div className="unstackable two fields">
-          <div className="field">
-            <label>First name</label>
-            <div className="ui input">
-              <input type="text" placeholder="First name" />
+      <div className="gridFooter">
+        <div className="listFooter">
+          <div role="list" class="ui list">
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="users icon"></i>
+              <div class="content">Semantic UI</div>
             </div>
-          </div>
-          <div className="field">
-            <label>Last name</label>
-            <div className="ui input">
-              <input type="text" placeholder="Last name" />
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="marker icon"></i>
+              <div class="content">New York, NY</div>
             </div>
-          </div>
-        </div>
-        <div className="two fields">
-          <div className="field">
-            <label>Address</label>
-            <div className="ui input">
-              <input type="text" placeholder="Address" />
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="mail icon"></i>
+              <div class="content">
+                <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
+              </div>
             </div>
-          </div>
-          <div className="field">
-            <label>Phone</label>
-            <div className="ui input">
-              <input type="text" placeholder="Phone" />
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="linkify icon"></i>
+              <div class="content">
+                <a href="http://www.semantic-ui.com">semantic-ui.com</a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="field">
-          <div className="ui checkbox">
-            <input
-              type="checkbox"
-              className="hidden"
-              readOnly=""
-              tabIndex="0"
-            />
-            <label>I agree to the Terms and Conditions</label>
+        <div className="listFooter">
+          <div role="list" class="ui list">
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="users icon"></i>
+              <div class="content">Semantic UI</div>
+            </div>
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="marker icon"></i>
+              <div class="content">New York, NY</div>
+            </div>
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="mail icon"></i>
+              <div class="content">
+                <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
+              </div>
+            </div>
+            <div role="listitem" class="item">
+              <i aria-hidden="true" class="linkify icon"></i>
+              <div class="content">
+                <a href="http://www.semantic-ui.com">semantic-ui.com</a>
+              </div>
+            </div>
           </div>
         </div>
-        <button type="submit" className="ui button">
-          Submit
-        </button>
-      </form>
+      </div>
     </div>
   );
 };

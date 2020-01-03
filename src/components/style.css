@@ -13,6 +13,9 @@
 .ui.inverted.menu {
   margin: auto;
 }
+img.logoHeader {
+  width: 500px;
+}
 .placeList {
   width: 80vw;
   display: grid;
@@ -317,6 +320,16 @@ i {
   color: white;
 }
 /*EndTable*/
+.listFooter {
+  width: 15vw;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.gridFooter {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 /*EndFooter*/
 @media only screen and (max-width: 600px) {
   h1.heroTitle {
