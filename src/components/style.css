@@ -347,7 +347,10 @@ i {
     -webkit-text-fill-color: transparent;
     color: white;
   }
-
+  img.logoHeader {
+    width: 300px;
+    margin-top: 30px;
+  }
   /* Hero */
   .defaultHero,
   .roomsHero {
